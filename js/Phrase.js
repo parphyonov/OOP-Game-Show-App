@@ -50,6 +50,3 @@ class Phrase {
   }
 
 }
-
-const myPhrase = new Phrase ('Myfanwy');
-myPhrase.addPhraseToDisplay();
