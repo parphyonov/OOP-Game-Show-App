@@ -1,4 +1,4 @@
-=== Object-Oriented Programming Game Show App ===
-== Project IV at Treehouse Techdegree ==
+# Object-Oriented Programming Game Show App
+## Project IV at Treehouse Techdegree
 
-= Browser Testing =
+### Browser Testing #
