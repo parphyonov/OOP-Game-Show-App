@@ -1,4 +1,3 @@
-// phrase class that we will use in the game
 class Phrase {
 
   // we need to supply a string to it in order to use it with class's methods

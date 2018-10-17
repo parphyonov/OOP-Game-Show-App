@@ -3,18 +3,20 @@ let game;
 
 // List of phrases
 const phrases = [
-  'Ada Lovelace',
-  'Niklaus Wirth',
-  'Bill Gates',
-  'James Gosling',
-  'Guido van Rossum',
-  'Ken Thompson',
-  'Donald Knuth',
-  'Brian Kernighan',
-  'Tim Berners-Lee',
-  'Bjarne Stroustrup',
-  'Linus Torvalds',
-  'Dennis Ritchie'
+  'qwert',
+  // 'asdfg'
+  // 'Ada Lovelace',
+  // 'Niklaus Wirth',
+  // 'Bill Gates',
+  // 'James Gosling',
+  // 'Guido van Rossum',
+  // 'Ken Thompson',
+  // 'Donald Knuth',
+  // 'Brian Kernighan',
+  // 'Tim Berners-Lee',
+  // 'Bjarne Stroustrup',
+  // 'Linus Torvalds',
+  // 'Dennis Ritchie'
 ];
 
 // Function to hide the overlay
@@ -40,6 +42,7 @@ $('#btn__reset').on('click', () => {
   resetDisplay();
   // new game object is created and stored to the global variable
   game = new Game(0, phrases);
+  // We also start the game by adding new elements to the page (see this method in Game.js)
   game.startGame();
 });
 
