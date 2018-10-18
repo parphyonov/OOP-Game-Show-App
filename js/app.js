@@ -49,3 +49,10 @@ $('.key').attr('autocomplete', 'off');
 
 // binds markButton method to click event on keys
 $('.key').on('click', markButton);
+
+document.addEventListener('keypress', event => {
+  const character = event.key;
+  if ($('#overlay').css('display') === 'none' && character.match(/[a-z]/i)) {
+    game.handleInteraction(character);
+  }
+});
