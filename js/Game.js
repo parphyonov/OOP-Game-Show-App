@@ -28,7 +28,7 @@ class Game {
     } else {
       // else one life is removed
       this.removeLife();
-    };
+    }
     // checks if the player wins or loses
     this.checkForWin();
   }

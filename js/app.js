@@ -32,7 +32,7 @@ const markButton = (event) => {
   // to pass it to the the Game's handleInteraction method
   game.handleInteraction(letter);
 
-}
+};
 
 // On clicking the button
 $('#btn__reset').on('click', () => {
