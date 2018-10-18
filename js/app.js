@@ -3,26 +3,24 @@ let game;
 
 // List of phrases
 const phrases = [
-  'qwert',
-  // 'asdfg'
-  // 'Ada Lovelace',
-  // 'Niklaus Wirth',
-  // 'Bill Gates',
-  // 'James Gosling',
-  // 'Guido van Rossum',
-  // 'Ken Thompson',
-  // 'Donald Knuth',
-  // 'Brian Kernighan',
-  // 'Tim Berners-Lee',
-  // 'Bjarne Stroustrup',
-  // 'Linus Torvalds',
-  // 'Dennis Ritchie'
+  'Ada Lovelace',
+  'Niklaus Wirth',
+  'Bill Gates',
+  'James Gosling',
+  'Guido van Rossum',
+  'Ken Thompson',
+  'Donald Knuth',
+  'Brian Kernighan',
+  'Tim Berners-Lee',
+  'Bjarne Stroustrup',
+  'Linus Torvalds',
+  'Dennis Ritchie'
 ];
 
 // Function to hide the overlay
 const resetDisplay = () => $('#overlay').css('display', 'none');
 
-const markButton = () => {
+const markButton = (event) => {
   // we target the pressed key
   const key = event.target;
   // add class 'chosen'
@@ -45,6 +43,9 @@ $('#btn__reset').on('click', () => {
   // We also start the game by adding new elements to the page (see this method in Game.js)
   game.startGame();
 });
+
+// Firefox feature off
+$('.key').attr('autocomplete', 'off');
 
 // binds markButton method to click event on keys
 $('.key').on('click', markButton);

@@ -42,7 +42,7 @@ class Game {
 
   checkForWin() {
     // the condition of winning
-    const winning = $('.show').length === this.phrase.phrase.length;
+    const winning = $('.show').length + $('.space').length === this.phrase.phrase.length;
     // the condition of losing
     const losing = this.missed === 5;
     // targeting #overlay for later use in this method
