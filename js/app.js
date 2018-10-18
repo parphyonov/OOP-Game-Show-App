@@ -5,18 +5,18 @@ let usedCharacters = [];
 
 // List of phrases
 const phrases = [
-  'Ada Lovelace',
-  'Niklaus Wirth',
-  'Bill Gates',
-  'James Gosling',
-  'Guido van Rossum',
-  'Ken Thompson',
-  'Donald Knuth',
-  'Brian Kernighan',
-  'Tim Berners-Lee',
-  'Bjarne Stroustrup',
-  'Linus Torvalds',
-  'Dennis Ritchie'
+    'Ada Lovelace',
+    'Niklaus Wirth',
+    'Bill Gates',
+    'James Gosling',
+    'Guido van Rossum',
+    'Ken Thompson',
+    'Donald Knuth',
+    'Brian Kernighan',
+    'Tim Berners-Lee',
+    'Bjarne Stroustrup',
+    'Linus Torvalds',
+    'Dennis Ritchie'
 ];
 
 // Function to hide the overlay
